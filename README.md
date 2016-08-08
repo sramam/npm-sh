@@ -1,5 +1,5 @@
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [https://david-dm.org/sramam/npm-sh.svg]
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![dependencies](https://david-dm.org/sramam/npm-sh.svg)](https://david-dm.org/sramam/npm-sh)
 
 # npm-sh
 A shell that adds node_modules/.bin to path. 
