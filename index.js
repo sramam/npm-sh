@@ -31,17 +31,20 @@ var shell = env.SHELL || (isWin ? env.comspec || 'cmd' : 'sh')
 var shproc
 try {
   fs.statSync(nodeModules)
-    // prepend ./node_modules/.bin to path
+  // prepend ./node_modules/.bin to path
   opts.env.PATH = [nodeModules, opts.env.PATH].join(path.delimiter)
 
-    // spawn the shell
+  // spawn the shell
+  console.log('\n---')
+  console.log('Starting npm shell')
+  console.log('added: ', fs.readdirSync(nodeModules).join(', '))
+  console.log('type "exit" when done\n---\n')
   shproc = spawn(shell, [], opts)
   shproc.on('close', function (code) {
     console.log('\n exiting npm shell')
     process.exit()
   })
-  console.log('\nadded: ', fs.readdirSync(nodeModules).join(', '))
-  console.log(shell) // we seemingly need this to show the first prompt TODO: figure how to eliminate
 } catch (err) {
+  console.log(err)
   console.log('\nMissing node_modules/.bin directory. Skipping spawning a shell')
 }

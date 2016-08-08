@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A shell that adds node_modules/.bin to path.",
   "main": "index.js",
+  "bin": {
+	  "npm-sh": "./index.js"
+  },
   "scripts": {
     "test": "mocha"
   },

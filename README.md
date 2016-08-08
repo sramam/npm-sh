@@ -10,3 +10,11 @@ The package is almost completely copied from similar implementation from a simil
 
 Currently, only tested on macosx. Issue reports/ pull-requests welcome!
 
+## Installation
+    npm install npm-sh
+
+## Usage
+    ./node_modules/.bin/npm-sh
+    // Spawns a child shell with ./node_modules/.bin in the path.
+    // When done, 'exit' to return to parent shell
+
