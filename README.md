@@ -14,7 +14,13 @@ Currently, only tested on macosx. Issue reports/ pull-requests welcome!
     npm install npm-sh
 
 ## Usage
-    ./node_modules/.bin/npm-sh
-    // Spawns a child shell with ./node_modules/.bin in the path.
-    // When done, 'exit' to return to parent shell
+    $ ./node_modules/.bin/npm-sh
+    
+    ---
+    Starting npm shell
+    added:  _mocha, mocha, standard
+    type "exit" when done
+    ---
+    
+    bash-4.3$
 
