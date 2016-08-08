@@ -1,6 +1,6 @@
 {
   "name": "npm-sh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A shell that adds node_modules/.bin to path.",
   "main": "index.js",
   "bin": {
